@@ -1,0 +1,9 @@
+<h1>
+  Departments:
+</h1>
+<hr>
+<input type="text" placeholder="Enter the Department Name" [(ngModel)]= "role" >
+<br/>
+<ul *ngFor='let listItem of listEmp'  >
+  <li *ngIf='listItem.role==role' >{{listItem.name}} </li>
+</ul>
